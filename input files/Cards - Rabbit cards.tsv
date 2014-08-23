@@ -1,0 +1,9 @@
+12	Speed 1	Move 1 square	Basic move
+8	Speed 2	Move 2 squares	Basic move
+8	Small jump	Jump 1/Speed 1	Basic move
+6	Big jump	Jump 2/Speed 1	Basic move
+10	Dex 1	When escaping from a trap, add 1 to your dexterity points	Basic move
+5	Warp	If you are next to a rabbit house, move to a square next to the rabbit house of your choosing.	Special move
+2	Level up	Instantly level up	Misc
+4	Dog toy	Stop the dog's movement for the rest of your turn	Misc
+5	Magic rabbit	Right after the rabbit tokens are revealed, use this card and swap your rabbit token with any other rabbit token	Misc

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Thu, 13 Feb 2014 16:55:08 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Rabbits - Card generator</title>
+	
+	<link href="css/cards.css" rel="stylesheet" type="text/css" />
+	<link href="css/print.css" rel="stylesheet" type="text/css" />	
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>	
+	<script src="js/utils/CustomFileReader.js" type="text/javascript"></script>	
+	<script src="js/utils/Inheritance.js" type="text/javascript"></script>	
+	<script src="js/utils/HtmlConstants.js" type="text/javascript"></script>		
+	<script src="js/utils/Constants.js" type="text/javascript"></script>		
+	
+	<script src="js/cards/GenericCard.js" type="text/javascript"></script>
+	<script src="js/cards/FarmerCard.js" type="text/javascript"></script>
+	<script src="js/cards/RabbitCard.js" type="text/javascript"></script>
+	<script src="js/cards/BackCard.js" type="text/javascript"></script>		
+	
+	<script src="js/card parsers/GenericCardsParser.js" type="text/javascript"></script>		
+	<script src="js/card parsers/FarmerCardsParser.js" type="text/javascript"></script>
+	<script src="js/card parsers/RabbitCardsParser.js" type="text/javascript"></script>
+	<script src="js/card parsers/BackCardsParser.js" type="text/javascript"></script>	
+	
+	<script src="js/card objects/GenericCardObject.js" type="text/javascript"></script>
+	<script src="js/card objects/FarmerCardObject.js" type="text/javascript"></script>
+	<script src="js/card objects/RabbitCardObject.js" type="text/javascript"></script>
+	<script src="js/card objects/BackCardObject.js" type="text/javascript"></script>
+			
+	<script src="js/factories/ParserFactory.js" type="text/javascript"></script>
+	<script src="js/factories/CardFactory.js" type="text/javascript"></script>									
+    <script src="js/CardGenerator.js" type="text/javascript"></script>	
+		
+	<script type="text/javascript">
+		 	
+      $( document ).ready(function() {	
+	  
+	    var fileInput = document.getElementById('fileinput');
+        fileInput.addEventListener('change', readSingleFile, false);       
+      });	
+	</script>		
+  </head>
+  <body>
+  		
+    <input type="file" id="fileinput" />
+	
+    <select id="cardType">
+      <option value="farmer" select="selected">Farmer</option>
+      <option value="rabbit">Rabbit</option>
+      <option value="back">Back</option>	  	
+    </select>
+	
+	<div id="cardGeneratorResults" />					
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="utils/|card objects/|cards/|factories/|card parsers/" kind="src" path="js"/>
+	<classpathentry kind="src" path="js/card objects"/>
+	<classpathentry kind="src" path="js/card parsers"/>
+	<classpathentry kind="src" path="js/cards"/>
+	<classpathentry kind="src" path="js/factories"/>
+	<classpathentry kind="src" path="js/utils"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

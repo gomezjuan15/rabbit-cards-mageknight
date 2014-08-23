@@ -1,0 +1,13 @@
+8	Garden scissors	1 harvesting point.	1	Harvesting tool	https://www.google.com/search?q=garden+scissors&espv=2&tbm=isch&tbo=u&source=univ&sa=X&ei=HB3TU5juLqzlsASPyoKgDw&ved=0CBwQsAQ&biw=1366&bih=667
+6	Small sickle	2 harvesting points.	2	Harvesting tool	http://upload.wikimedia.org/wikipedia/commons/9/9c/Sickle_(PSF).png
+6	Gandasa	2 harvesting points.	3	Harvesting tool	http://www.concordeagro.com/images/CAS-149.jpg
+4	Big sickle	3 harvesting points.	4	Harvesting tool	
+8	Scythe	Harvest 1 unit of hay.	1	Harvesting tool	https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfb0zkqgQ-ryR6N3ZDrkc_KCH5PoTvMd3jESma_8oT2LyuExSU
+2	Fertilizer	Pick a seed. Roll a growth dice on that seed and resolve it as if it was a sprout.	No value	Misc	
+6	1 Dog treats	1 treat point	No value	Misc	
+4	2 Dog treats	2 treat points	No value	Misc	
+4	Free junk	Free dirty token	No value	Coupon	
+4	Trap discount	50% any trap	No value	Coupon	
+4	Hunter discount	50% any hunter	No value	Coupon	
+2	Abundance	After picking up a seasonal fruit, instead of getting corresponding money, get 4 coins worth of traps or hunters	No value	Misc	
+2	Pestiscide	After a rabbit gets a crop, play this card and roll a dice. On a 4 to 6, the rabbit looses 1 heart. The rabbit still gets points for the vegetable.	No value	Trap	

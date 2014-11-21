@@ -26,8 +26,7 @@ function parseLine(cardLine, cardObjects, caller) {
 	var templateCard = caller.createCard(attributes);
 	
 	for(i = 0; i < quantity; i++){
-	    var instanceCard;
-		instanceCard = $.extend( true, {}, templateCard );
+	    var instanceCard = $.extend( true, {}, templateCard );
 		cardObjects.push(instanceCard);
 	}
 }

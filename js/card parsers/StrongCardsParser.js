@@ -1,17 +1,17 @@
 
-function RabbitCardsParser() {
+function StrongCardsParser() {
 
 	this.parse = function (cardsData) {
 	
 	    return this.parent.parse(cardsData, this);
     };
 }
-RabbitCardsParser.inheritsFrom( GenericCardsParser );
+StrongCardsParser.inheritsFrom( GenericCardsParser );
 
 
-RabbitCardsParser.prototype.createCard = function(attributes) {
+StrongCardsParser.prototype.createCard = function(attributes) {
     
-	var card = new RabbitCardObject(attributes[1],
+	var card = new StrongCardObject(attributes[1],
 			   	   				    attributes[2],
 			   	   				    attributes[3],
 			   	   				    attributes[4]);

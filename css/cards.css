@@ -3,6 +3,7 @@
 
 .cardGeneratorTable {
     border-collapse: collapse;
+    margin-left: 36px;
 }
 
 .cardGeneratorTable td {
@@ -17,23 +18,22 @@
 
 
 
-.farmer .title.day {
+.farmer.title {
     //background-color: #FFCC00;
     border-color: #FFCC00;
     //color: white;
 }
-.farmer .title.night {
-    //background-color: #FFCC00;
-    border-color: #7401DF;
-    //color: white;
+.basic.title {
+	border-color: #0174DF;
 }
-.rabbit .title.special {
-    //background-color: #F70E0E;
-    border-color: #F70E0E;
+.weak.title {
+	border-color: #04B404;
 }
-.rabbit .title.move {
-    //background-color: #99CCFF;
-    border-color: #99CCFF;
+.strong.title {
+	border-color: #FF0000;
+}
+.item.title {
+	border-color: #FA58F4;
 }
 
 
@@ -69,7 +69,9 @@
     border-width: 2px 1px 2px 1px;
     width: 100%;  
     font-weight: bold;
-    text-align: center; 
+    text-align: center;
+    display: block; 
+    height: 18px;
 }
 
  img.mainImage {
@@ -87,7 +89,7 @@ img.backImage {
 
 .cardDescription {
 	margin: 15px;
-	top: 150px;
+	top: 170px;
 }
 
 .cardValue {
@@ -100,5 +102,22 @@ img.backImage {
     bottom: 3px;
     right: 6px;
     font-weight: bold;
+}
+
+.animalType {
+	position: absolute;
+	top: 158px;
+	right: 11px;
+	font-style: italic;	
+}
+
+.cost {
+	font-weight: bold;
+	right: 6px;
+}
+
+.antiTheft {
+	font-weight: bold;
+	right: 4px;
 }
 

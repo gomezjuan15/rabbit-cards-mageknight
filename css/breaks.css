@@ -1,0 +1,10 @@
+
+.pageBreakFirst {
+    height: 30px;
+}
+.pageBreakNormal {
+    height: 43px;
+}
+.pageBreakExtraSpace {
+    height: 112px;
+}

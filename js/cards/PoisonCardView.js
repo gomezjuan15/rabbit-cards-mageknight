@@ -1,20 +1,20 @@
 
 
-function ItemCardView() {	
+function PoisonCardView() {	
 
 }
-ItemCardView.inheritsFrom( GenericCardView );
+PoisonCardView.inheritsFrom( GenericCardView );
 
-ItemCardView.prototype.getHtml = function(cardObject, width, height) {
+PoisonCardView.prototype.getHtml = function(cardObject, width, height) {
     return this.parent.getHtml(cardObject, width, height, this);
 };
 
 
-ItemCardView.prototype.buildCardDiv = function(cardObject) {
+PoisonCardView.prototype.buildCardDiv = function(cardObject) {
 	
 	var cardNode = createNode('div');	
 	$(cardNode).addClass('card')
-					.addClass(cardObject.cardType);
+				.addClass(cardObject.cardType);
 	
 	var titleNode = createNode('title');
 	$(titleNode).addClass('title')
@@ -22,10 +22,10 @@ ItemCardView.prototype.buildCardDiv = function(cardObject) {
 	$(cardNode).append(titleNode);
 	
 	//TODO: add image background
-	var antiTheftLevelNode = createNode('div');
-	$(antiTheftLevelNode).addClass('antiTheft')
-			   			 .text('Theft cost: ' + cardObject.antiTheftLevel);
-	$(cardNode).append(antiTheftLevelNode);
+	var costNode = createNode('div');
+	$(costNode).addClass('cost')
+			   .text('Antidote: ' + cardObject.antidote);
+	$(cardNode).append(costNode);
 	
 	var imageNode = createNode('img');
 	$(imageNode).attr('src', cardObject.image)
@@ -33,8 +33,8 @@ ItemCardView.prototype.buildCardDiv = function(cardObject) {
 	$(cardNode).append(imageNode);
 	
 	var descriptionNode = createNode('div');
-	$(descriptionNode).addClass('cardDescription')
-					  .text(cardObject.description);
+	$(descriptionNode).addClass('cardPoisonDescription')
+					  .text(cardObject.effect);
 	$(cardNode).append(descriptionNode);
 
 	return cardNode;

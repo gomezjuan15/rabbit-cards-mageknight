@@ -11,6 +11,6 @@
             cardGeneratorResults { /* aligning the printable area */
                 position:absolute;
                 left:40;
-                top:40;
+                top:30px !important;
             }
         }

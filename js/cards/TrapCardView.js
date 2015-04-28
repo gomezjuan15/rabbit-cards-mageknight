@@ -1,16 +1,16 @@
 
 
-function StrongCardView() {	
+function TrapCardView() {	
 
 }
-StrongCardView.inheritsFrom( GenericCardView );
+TrapCardView.inheritsFrom( GenericCardView );
 
-StrongCardView.prototype.getHtml = function(cardObject, width, height) {
+TrapCardView.prototype.getHtml = function(cardObject, width, height) {
     return this.parent.getHtml(cardObject, width, height, this);
 };
 
 
-StrongCardView.prototype.buildCardDiv = function(cardObject) {
+TrapCardView.prototype.buildCardDiv = function(cardObject) {
 	
 	var cardNode = createNode('div');	
 	$(cardNode).addClass('card')
@@ -24,7 +24,7 @@ StrongCardView.prototype.buildCardDiv = function(cardObject) {
 	//TODO: add image background
 	var costNode = createNode('div');
 	$(costNode).addClass('cost')
-			   .text('Cost: ' + cardObject.cost);
+			   .text('Threat level: ' + cardObject.threatLevel);
 	$(cardNode).append(costNode);
 	
 	var imageNode = createNode('img');
@@ -32,10 +32,15 @@ StrongCardView.prototype.buildCardDiv = function(cardObject) {
 			 .addClass('mainImage');
 	$(cardNode).append(imageNode);
 	
-	var descriptionNode = createNode('div');
-	$(descriptionNode).addClass('cardDescription')
-					  .text(cardObject.description);
-	$(cardNode).append(descriptionNode);
+	var effect1Node = createNode('div');
+	$(effect1Node).addClass('cardEffect1')
+					  .text(cardObject.effect1);
+	$(cardNode).append(effect1Node);
+	
+	var effect2Node = createNode('div');
+	$(effect2Node).addClass('cardEffect2')
+					  .text(cardObject.effect2);
+	$(cardNode).append(effect2Node);	
 
 	return cardNode;
 };

@@ -18,5 +18,9 @@ CardViewFactory.prototype.getCard = function(cardType) {
 	    return new WeakCardView();
 	}else if(cardType === TYPE_ITEM) {	
 	    return new ItemCardView();
+	}else if(cardType === TYPE_POISON) {	
+	    return new PoisonCardView();
+	}else if(cardType === TYPE_TRAP) {	
+	    return new TrapCardView();
 	}
 };

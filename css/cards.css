@@ -8,7 +8,7 @@
 
 .cardGeneratorTable td {
     border-spacing: 1;
-    padding: 1px 0;
+    padding: 0;
     position: relative;
 }
 
@@ -16,36 +16,56 @@
     border: 1px solid black;
 }
 
+.card.farmer {
+    //background-color: red;
+    border-color: red;
+    //color: white;
+}
+.card.basic {
+	border-color: green;
+}
+.card.weak {
+	border-color: orange;
+}
+.card.strong {
+	border-color: purple;
+}
+.card.item {
+	border-color: blue;
+}
+.card.trap {
+	border-color: black;
+}
+.card.poison {
+	border-color: purple;
+}
 
 
+/*
 .farmer.title {
-    //background-color: #FFCC00;
-    border-color: #FFCC00;
+    //background-color: red;
+    border-color: red;
     //color: white;
 }
 .basic.title {
-	border-color: #0174DF;
+	border-color: green;
 }
 .weak.title {
-	border-color: #04B404;
+	border-color: orange;
 }
 .strong.title {
-	border-color: #FF0000;
+	border-color: purple;
 }
 .item.title {
-	border-color: #FA58F4;
+	border-color: blue;
 }
-
-
-.pageBreakFirst {
-    height: 40px;
+.trap.title {
+	border-color: black;
 }
-.pageBreakNormal {
-    height: 70px;
+.poison.title {
+	border-color: purple;
 }
-.pageBreakExtraSpace {
-    height: 112px;
-}
+*/
 
 
 
@@ -56,6 +76,7 @@
 .card {
 	position: relative;
 	height: 280px;
+	border: 10px solid transparent;
 }
 
 .card > div,
@@ -64,20 +85,19 @@
 }
 
 .title {
-    top: -1px;
-    border: solid; 
     border-width: 2px 1px 2px 1px;
     width: 100%;  
     font-weight: bold;
     text-align: center;
     display: block; 
     height: 18px;
+    margin-top: 10px;
 }
 
  img.mainImage {
  	height: 100px;
 	width: 100px;
-	left: 50px;
+	left: 40px;
 	top: 50px;	
 }
 
@@ -87,9 +107,28 @@ img.backImage {
 	width: 100%;	
 }
 
-.cardDescription {
+.cardEffect1 {
 	margin: 15px;
 	top: 170px;
+}
+
+.cardEffect2 {
+	margin: 15px;
+	top: 190px;
+}
+
+.cardPoisonDescription {
+	margin: 15px;
+	top: 200px;
+}
+
+.basic .cardDescription {
+	top: 168px;
+}
+
+.cardDescription {
+	margin: 15px;
+	top: 140px;
 }
 
 .cardValue {
@@ -112,12 +151,11 @@ img.backImage {
 }
 
 .cost {
-	font-weight: bold;
 	right: 6px;
 }
 
 .antiTheft {
-	font-weight: bold;
+	font-style: italicS;
 	right: 4px;
 }
 

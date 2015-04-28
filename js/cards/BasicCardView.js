@@ -13,11 +13,11 @@ BasicCardView.prototype.getHtml = function(cardObject, width, height) {
 BasicCardView.prototype.buildCardDiv = function(cardObject) {
 	
 	var cardNode = createNode('div');	
-	$(cardNode).addClass('card');
+	$(cardNode).addClass('card')
+				.addClass(cardObject.cardType);
 	
 	var titleNode = createNode('title');
 	$(titleNode).addClass('title')
-				.addClass(cardObject.cardType)
 				.text(cardObject.title);
 	$(cardNode).append(titleNode);
 	

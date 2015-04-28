@@ -18,5 +18,9 @@ ParserFactory.prototype.getParser = function(cardType) {
 	    return new StrongCardsParser();
 	}else if(cardType === TYPE_ITEM) {	
 	    return new ItemCardsParser();
+	}else if(cardType === TYPE_POISON) {	
+	    return new PoisonCardsParser();
+	}else if(cardType === TYPE_TRAP) {	
+	    return new TrapCardsParser();
 	}
 };
